@@ -1,4 +1,4 @@
-# github-url
+# client-github-url
 
 ![tests](https://github.com/adriaanmolendijk/github-remote-url/actions/workflows/main.yml/badge.svg)
 

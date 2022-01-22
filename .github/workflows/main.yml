@@ -6,11 +6,19 @@ on:
       - '*'
 
 jobs:
-  build:
+  client-github-url:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v2
-      - name: Run tests
-        run: echo "Run tests"
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Set working directory
+      run: cd clients/client-github-url
+    - name: Set up Python venv
+      run: |
+        make setup-venv
+        source venv/bin/activate
+    - name: Run unit tests
+      run: make unit-test
+    - name: Run integration tests
+      run: make integration-test
