@@ -8,21 +8,18 @@ on:
 jobs:
   client-github-url:
     runs-on: ubuntu-latest
+    env:
+      working-directory: clients/client-github-url
 
     steps:
     - name: Check out repo
       uses: actions/checkout@v2
     - name: Setup venv
-      run: |
-        cd clients/client-github-url
-        make setup-venv
+      working-directory: ${{ env.working-directory }}
+      run: make setup-venv
     - name: Run unit test
-      run: |
-        cd clients/client-github-url
-        source venv/bin/activate
-        make unit-test
+      working-directory: ${{ env.working-directory }}
+      run: make unit-test
     - name: Run integration test
-      run: |
-        cd clients/client-github-url
-        source venv/bin/activate
-        make integration-test
+      working-directory: ${{ env.working-directory }}
+      run: make integration-test
