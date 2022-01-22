@@ -3,10 +3,12 @@
 ![tests](https://github.com/adriaanmolendijk/github-repo-template/actions/workflows/main.yml/badge.svg)
 
 ## About this repository
-GitHub repository template.
+Development setup.
 
 ### Setup
-
+```bash
+make setup
+```
 ### Test
 
 ### Example usage
