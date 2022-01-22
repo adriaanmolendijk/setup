@@ -12,13 +12,17 @@ jobs:
     steps:
     - name: Check out repo
       uses: actions/checkout@v2
-    - name: Set working directory
-      run: cd clients/client-github-url
-    - name: Set up Python venv
+    - name: Setup venv
       run: |
+        cd clients/client-github-url
         make setup-venv
+    - name: Run unit test
+      run: |
+        cd clients/client-github-url
         source venv/bin/activate
-    - name: Run unit tests
-      run: make unit-test
-    - name: Run integration tests
-      run: make integration-test
+        make unit-test
+    - name: Run integration test
+      run: |
+        cd clients/client-github-url
+        source venv/bin/activate
+        make integration-test
