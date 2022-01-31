@@ -5,13 +5,9 @@
 ## kubernetes
 alias k='kubectl'
 alias knsc='k config get-contexts'
+alias kctx='k config use-context'
 source <(kubectl completion bash)
 complete -F __start_kubectl k
-
-# krew
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-alias kns='k ns'
-alias kctx='k ctx'
 
 ## maven
 # export PATH=$PATH:/opt/apache-maven/bin
