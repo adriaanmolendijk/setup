@@ -4,6 +4,7 @@
 
 ## kubernetes
 alias k='kubectl'
+alias kns='k config set-context --current --namespace'
 alias knsc='k config get-contexts'
 alias kctx='k config use-context'
 source <(kubectl completion bash)
