@@ -1,15 +1,15 @@
-##### @adriaanmolendijk #####
-# java
+#### @adriaanmolendijk ####
+## java
 # export JAVA_HOME=<placeholder>
 
-# kubernetes
+## kubernetes
 alias k='kubectl'
 source <(kubectl completion bash)
 complete -F __start_kubectl k
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# maven
+## maven
 # export PATH=$PATH:/opt/apache-maven/bin
 
 ## terminal prompt
@@ -21,6 +21,6 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@linux\[\033[00m\]:\[\03
 ## terminal fuzzyfinder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# terraform
+## terraform
 complete -C /usr/bin/terraform terraform
-##### @adriaanmolendijk #####
+#### @adriaanmolendijk ####
