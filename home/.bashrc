@@ -3,6 +3,7 @@
 # export JAVA_HOME=<placeholder>
 
 ## kubernetes
+alias h='helm'
 alias k='kubectl'
 alias kns='k config set-context --current --namespace'
 alias knsc='k config get-contexts'
