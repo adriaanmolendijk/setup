@@ -8,6 +8,18 @@ on:
 jobs:
   client-github-url:
     runs-on: ubuntu-latest
+    env:
+      working-directory: clients/client-github-url
+
     steps:
-    - name: Run tests
-      run: echo "Run tests"
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Setup venv
+      working-directory: ${{ env.working-directory }}
+      run: make setup-venv
+    - name: Run unit test
+      working-directory: ${{ env.working-directory }}
+      run: make unit-test
+    - name: Run integration test
+      working-directory: ${{ env.working-directory }}
+      run: make integration-test
