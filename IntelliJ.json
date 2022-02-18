@@ -1,0 +1,16 @@
+{
+  "IntelliJ": {
+    "settings": {
+      "font-size": 16,
+      "line-height": 1.1
+    },
+    "keymap": {
+      "terminal": "ctrl + `",
+      "manage projects": "ctrl + shift + p",
+      "path from repository root": "ctrl + shift + x",
+      "close editor tab": "ctrl + w",
+      "Paste X from clipboard": ""
+    },
+    "plugins": ["AsciiDoc", "csv", "Docker", "Makefile Language", "PlantUML Integration", "Terraform and HCL"]
+  }
+}
