@@ -1,4 +1,4 @@
-# ~/.bashrc
+# ~/.zshrc
 cat home/.zshrc > ~/.zshrc
 echo "" >> ~/.zshrc
 
