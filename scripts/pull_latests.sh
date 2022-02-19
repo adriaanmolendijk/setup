@@ -6,7 +6,7 @@ custom_log() {
 # for each repository in current folder do
 count=0
 nr_repos=$(ls | wc -l)
-nr_repos=$((nr_repos-1))
+nr_repos=$((nr_repos-1)) # remove the pull_latests.sh from count
 for dir in */; do
   count=$((count+1))
   cd $dir
