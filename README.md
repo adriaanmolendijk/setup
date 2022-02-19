@@ -1,7 +1,7 @@
 # setup
 
 ## About this repository
-Development setup.
+Development setup. 
 
 # Setup
 ```shell
