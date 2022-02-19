@@ -1,5 +1,3 @@
-### @adriaanmolendijk ###
-
 # brew update
 brew update
 
@@ -26,5 +24,3 @@ brew install terragrunt
 brew install postman
 
 brew install --cask intellij-idea-ce
-
-### @adriaanmolendijk ###
