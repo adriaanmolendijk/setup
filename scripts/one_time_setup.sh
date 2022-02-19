@@ -24,3 +24,4 @@ brew install terragrunt
 brew install postman
 
 brew install --cask intellij-idea-ce
+brew install --cask pycharm-ce
