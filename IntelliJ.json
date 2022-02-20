@@ -6,7 +6,7 @@
     },
     "Keymap": {
       "Terminal": "CTRL + `",
-      "Manage Projects...": "CTRL + SHIFT + P",
+      "Manage Projects...": "CTRL + SHIFT + P"
     },
     "plugins": ["AsciiDoc", "Csv", "Docker", "Makefile Language", "PlantUML Integration", "Terraform and HCL"]
   }
