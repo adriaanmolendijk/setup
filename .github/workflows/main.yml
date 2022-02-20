@@ -9,7 +9,7 @@ jobs:
   client-github-url:
     runs-on: ubuntu-latest
     env:
-      working-directory: clients/client-github-url
+      working-directory: tools/tool-github-url
 
     steps:
     - name: Check out repo
