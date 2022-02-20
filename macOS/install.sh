@@ -8,7 +8,6 @@ brew install tree
 brew install jq
 brew install git
 
-brew install --cask sublime-text
 brew install --cask google-chrome
 
 # development
