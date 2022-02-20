@@ -9,6 +9,7 @@ brew install jq
 brew install git
 
 brew install --cask google-chrome
+brew install --cask sublime-text
 
 # development
 # install Docker
