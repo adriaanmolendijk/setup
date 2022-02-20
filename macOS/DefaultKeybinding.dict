@@ -1,10 +1,10 @@
 {
- "\UF729" = "moveToBeginningOfLine:";
- "\UF72B" = "moveToEndOfLine:";
- "$\UF729" = "moveToBeginningOfLineAndModifySelection:";
- "$\UF72B" = "moveToEndOfLineAndModifySelection:";
- "^\UF729" = "moveToBeginningOfDocument:";
- "^\UF72B" = "moveToEndOfDocument:";
- "$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:";
- "$^\UF72B" = "moveToEndOfDocumentAndModifySelection:";
+  "\UF729"  = moveToBeginningOfLine:; // home
+  "\UF72B"  = moveToEndOfLine:; // end
+  "$\UF729" = moveToBeginningOfLineAndModifySelection:; // shift-home
+  "$\UF72B" = moveToEndOfLineAndModifySelection:; // shift-end
+  "^\UF729" = moveToBeginningOfDocument:; // ctrl-home
+  "^\UF72B" = moveToEndOfDocument:; // ctrl-end
+  "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home
+  "^$\UF72B" = moveToEndOfDocumentAndModifySelection:; // ctrl-shift-end
 }
