@@ -1,2 +1,5 @@
 # IntelliJ IDEA
 .idea
+
+# macos
+.DS_Store
