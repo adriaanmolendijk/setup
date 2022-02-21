@@ -22,6 +22,8 @@ brew install helm
 
 brew install make
 brew install mvn
+brew install node
+
 brew install terraform
 brew install terragrunt
 
