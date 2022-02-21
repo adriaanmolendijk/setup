@@ -5,7 +5,6 @@
       "Line height": 1.2
     },
     "Keymap": {
-      "Close Project": "CMD + SHIFT + W",
       "Manage Projects...": "CMD + SHIFT + P",
       "Terminal": "CTRL + `"
     },
