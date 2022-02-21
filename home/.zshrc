@@ -1,5 +1,9 @@
 ### @adriaanmolendijk ###
 
+## macOS
+bindkey "\033[H" beginning-of-line
+bindkey "\033[F" end-of-line
+
 ## java
 # export JAVA_HOME=<placeholder>
 
