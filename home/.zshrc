@@ -4,6 +4,9 @@
 bindkey "\033[H" beginning-of-line
 bindkey "\033[F" end-of-line
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 ## java
 # export JAVA_HOME=<placeholder>
 
