@@ -13,7 +13,7 @@ export LANG=en_US.UTF-8
 autoload -Uz compinit && compinit
 
 ## java
-# export JAVA_HOME=<placeholder>
+# export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
 ## kubernetes
 alias h='helm'
