@@ -30,3 +30,5 @@ brew install terragrunt
 
 brew install --cask intellij-idea-ce
 brew install --cask pycharm-ce
+brew install --cask drawio
+
