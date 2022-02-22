@@ -1,16 +1,20 @@
 ### @adriaanmolendijk ###
 
 ## macOS
-# set home and end key
-bindkey "\033[H" beginning-of-line
-bindkey "\033[F" end-of-line
+# git autocomplete
+autoload -Uz compinit && compinit
 
 # language
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# git autocomplete
-autoload -Uz compinit && compinit
+# pyenv
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# set home and end key
+bindkey "\033[H" beginning-of-line
+bindkey "\033[F" end-of-line
 
 ## java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
