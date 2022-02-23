@@ -37,5 +37,3 @@ brew install pyenv
 # IDEs
 brew install --cask intellij-idea-ce
 brew install --cask pycharm-ce
-
-

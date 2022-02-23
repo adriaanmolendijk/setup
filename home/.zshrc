@@ -15,7 +15,8 @@ eval "$(pyenv init -)"
 bindkey "\033[H" beginning-of-line
 bindkey "\033[F" end-of-line
 
-## java
+## general
+# java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
 ## kubernetes
