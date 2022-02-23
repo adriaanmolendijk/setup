@@ -39,4 +39,7 @@ parse_git_branch() {
 setopt PROMPT_SUBST
 PROMPT='adriaan@mac %9c%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
 
+# custom tools
+alias github='python3 ~/tool_github_url.py'
+
 #################### @adriaanmolendijk ####################
