@@ -1,6 +1,6 @@
-### @adriaanmolendijk ###
+#################### @adriaanmolendijk ####################
 
-## macOS
+##### macOS #####
 # git autocomplete
 autoload -Uz compinit && compinit
 
@@ -15,11 +15,11 @@ eval "$(pyenv init -)"
 bindkey "\033[H" beginning-of-line
 bindkey "\033[F" end-of-line
 
-## general
-# java
+##### general #####
+## Java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
-## kubernetes
+# kubernetes
 alias h='helm'
 alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace'
@@ -29,7 +29,7 @@ alias kctx='kubectl config use-context'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
 
-## fuzzyfinder
+# fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-### @adriaanmolendijk ###
+#################### @adriaanmolendijk ####################
