@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # custom logger
 custom_log() {
   echo "progress $count/$nr_repos: $1"
