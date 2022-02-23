@@ -15,7 +15,6 @@ brew install postman
 
 ## development
 brew install git
-brew install iterm2
 
 # containerization
 brew install --cask docker
