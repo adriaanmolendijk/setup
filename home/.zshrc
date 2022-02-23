@@ -15,6 +15,9 @@ eval "$(pyenv init -)"
 bindkey "\033[H" beginning-of-line
 bindkey "\033[F" end-of-line
 
+# stop backward-kill-word on directory delimiter
+WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
+
 ##### general #####
 ## Java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
