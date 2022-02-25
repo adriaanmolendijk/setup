@@ -31,9 +31,6 @@ brew install vault
 brew install terraform
 brew install terragrunt
 
-# sdk managers
-brew install pyenv
-
 # IDEs
 brew install --cask intellij-idea-ce
 brew install --cask pycharm-ce

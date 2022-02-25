@@ -7,10 +7,6 @@ autoload -Uz compinit && compinit
 # language
 export LC_ALL=en_US.UTF-8
 
-# pyenv
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # set home and end key
 bindkey "\033[H" beginning-of-line
 bindkey "\033[F" end-of-line
