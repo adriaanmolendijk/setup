@@ -8,7 +8,7 @@
       "Close Project": "CMD + SHIFT + W",
       "Manage Projects...": "CMD + SHIFT + P",
       "Path From Repository Root": "CMD + SHIFT + X",
-      "Terminal": "CTRL + `"
+      "Terminal": "CMD + ."
     },
     "Plugins": ["AsciiDoc", "Csv", "Docker", "Makefile Language", "PlantUML Integration", "Terraform and HCL"]
   }
