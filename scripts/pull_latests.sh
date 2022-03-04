@@ -1,27 +1,23 @@
-#!/bin/bash
+#!/bin/sh
 
-# custom logger
-custom_log() {
-  echo "progress $count/$nr_repos: $1"
+log () {
+  echo ">>>>> $dir $1 <<<<<"
 }
 
 # for each repository in current folder do
-count=0
-nr_repos=$(ls | wc -l)
-nr_repos=$((nr_repos-1)) # remove the pull_latests.sh from count
 for dir in */; do
-  count=$((count+1))
   cd $dir
 
-  custom_log "pulling latest changes $dir"
-  git checkout main --quiet
-  git pull --quiet
+  log "checkout main"
+  git checkout main
+  git pull
   
-  custom_log "pruning old branches"
+  log "prune branches"
   git prune-branches
 
   sleep 2
-  custom_log ""
+  log "finished"
+  echo ""
   sleep 2
   cd ..
 done
