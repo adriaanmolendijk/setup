@@ -24,6 +24,8 @@ alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
+source <(kubectl completion zsh)
+compdef __start_kubectl k
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
