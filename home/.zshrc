@@ -14,7 +14,7 @@ bindkey "\033[F" end-of-line
 # stop backward-kill-word on directory delimiter
 WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 
-##### general #####
+##### tools #####
 ## Java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
@@ -30,10 +30,10 @@ compdef __start_kubectl k
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
 
-# fuzzyfinder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # custom tools
 alias github='python3 ~/tool_github_url.py'
+
+# fuzzyfinder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #################### @adriaanmolendijk ####################
