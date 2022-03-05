@@ -31,11 +31,6 @@ alias kctx='k ctx'
 # fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# prompt
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
 # custom tools
 alias github='python3 ~/tool_github_url.py'
 
