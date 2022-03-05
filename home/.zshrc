@@ -1,9 +1,6 @@
 #################### @adriaanmolendijk ####################
 
 ##### macOS #####
-# git autocomplete
-autoload -Uz compinit && compinit
-
 # language
 export LC_ALL=en_US.UTF-8
 
