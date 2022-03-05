@@ -1,6 +1,5 @@
 # home folder
-cp -r home/.vimrc ~/.vimrc
-cp -r home/.gitignore_global ~/.gitignore_global
+cp -r home/. ~
 
 # git setup
 git config --global core.editor vim
