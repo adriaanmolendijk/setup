@@ -4,6 +4,8 @@ brew update
 ## general tools
 brew install tree
 brew install jq
+
+brew install --cask iterm2
 brew install --cask google-chrome
 brew install --cask sublime-text
 brew install --cask drawio
