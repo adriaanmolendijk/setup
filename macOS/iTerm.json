@@ -4,5 +4,10 @@
   },
   "Text": {
     "Font": ["MesloLGS NF", "15"]
+  },
+  "Keys": {
+    "Key Mappings": {
+      "Presets...": "Natural Text Editing"
+    }
   }
 }
