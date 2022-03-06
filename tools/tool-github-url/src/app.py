@@ -16,6 +16,12 @@ def origin_url_to_address(origin_url):
         return origin_url[8:]
 
 
+def get_github_url(arg):
+    origin_url = Repository('.').remotes.__getitem__('origin').url
+    root_address = origin_url_to_address(origin_url)
+    return get_address(root_address, arg)
+
+
 def get_address(root_address, arg):
     if arg == '':
         return root_address
@@ -24,13 +30,7 @@ def get_address(root_address, arg):
     elif arg == 'b':
         return root_address + '/branches'
     else:
-        raise ValueError('Unrecognized input argument')
-
-
-def get_github_url(arg):
-    origin_url = Repository('.').remotes.__getitem__('origin').url
-    root_address = origin_url_to_address(origin_url)
-    return get_address(root_address, arg)
+        return root_address + '/blob/main/' + arg
 
 
 @click.command()
