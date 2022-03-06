@@ -33,4 +33,8 @@ alias github='python3 ~/tool_github_url.py'
 # fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# kubernetes context prompt
+source ~/zsh-kubectl-prompt/kubectl.zsh
+RPROMPT='%{$fg[blue]%}( $ZSH_KUBECTL_PROMPT )%{$reset_color%}'
+
 #################### @adriaanmolendijk ####################
