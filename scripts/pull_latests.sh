@@ -13,7 +13,7 @@ for dir in */; do
   git pull
   
   log "prune branches"
-  git prune-branches
+  git delete-remote-branches
 
   sleep 2
   log "finished"
