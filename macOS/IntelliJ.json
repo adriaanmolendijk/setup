@@ -7,7 +7,6 @@
     "Keymap": {
       "Close Project": "CMD + SHIFT + W",
       "Manage Projects...": "CMD + SHIFT + P",
-      "Open on GitHub": "CMD + SHIFT + G",
       "Path From Repository Root": "CMD + SHIFT + X",
       "Terminal": "CMD + ."
     },
