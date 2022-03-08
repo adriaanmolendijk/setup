@@ -12,7 +12,7 @@ for dir in */; do
   git checkout main
   git pull
   
-  log "prune branches"
+  log "delete remote branches"
   git delete-remote-branches
 
   sleep 2
