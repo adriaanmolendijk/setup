@@ -55,6 +55,6 @@ PROMPT='%9c%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
 
 # prompt kubernetes context
 source ~/zsh-kubectl-prompt/kubectl.zsh
-RPROMPT='%{$fg[blue]%}( $ZSH_KUBECTL_PROMPT )%{$reset_color%}'
+RPROMPT='%{%F{blue}%}( $ZSH_KUBECTL_PROMPT )%{$reset_color%}'
 
 #################### @adriaanmolendijk ####################
