@@ -16,7 +16,7 @@ WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 alias gittest='git add . && git cm "COMMIT 4 TESTING ONLY" && git p'
 
 # java
-# export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
+# export JAVA_HOME=$(/usr/libexec/java_home -v ${version})
 
 # kubernetes
 alias h='helm'
