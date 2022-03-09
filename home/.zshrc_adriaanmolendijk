@@ -12,6 +12,9 @@ bindkey "\033[F" end-of-line
 WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 
 ##### tools #####
+# git
+alias gittest='git add . && git cm "TESTING" && git p'
+
 # java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
