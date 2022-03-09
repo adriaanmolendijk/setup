@@ -12,6 +12,15 @@ bindkey "\033[F" end-of-line
 WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 
 ##### tools #####
+# git
+alias gb='git branch'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gdel='!git fetch -p && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'{print $1}'"'"' | xargs -r git branch -D'
+alias gpl='git pull'
+alias gst='git status'
+
 ## Java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
 
