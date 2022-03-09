@@ -13,7 +13,7 @@ WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 
 ##### tools #####
 # git
-alias gittest='git add . && git cm "TESTING" && git p'
+alias gitfake='git add . && git cm "FAKE COMMIT TESTING ONLY" && git p'
 
 # java
 # export JAVA_HOME=`/usr/libexec/java_home -v ${version}`
