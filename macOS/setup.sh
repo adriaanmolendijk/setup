@@ -23,6 +23,7 @@ brew install --cask docker
 brew install kubectl
 brew install lens
 brew install helm
+brew install k9s
 
 brew install make
 brew install mvn
