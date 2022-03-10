@@ -21,7 +21,7 @@ alias gdel='!git fetch -p && git branch -vv | grep '"'"': gone]'"'"' | awk '"'"'
 alias gp='git push'
 alias gpl='git pull'
 alias gst='git status'
-alias gtest='git add . && git cm "COMMIT 4 TESTING ONLY" && git p'
+alias gtest='ga . && gcm "COMMIT 4 TESTING ONLY" && gp'
 
 # java
 # export JAVA_HOME=$(/usr/libexec/java_home -v ${version})
