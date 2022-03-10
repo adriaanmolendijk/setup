@@ -13,15 +13,7 @@ WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
 
 ##### tools #####
 # git
-alias ga='git add'
-alias gb='git branch'
-alias gco='git checkout'
-alias gcm='git commit -m'
-alias gdel="git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done"
-alias gp='git push'
-alias gpl='git pull'
-alias gst='git status'
-alias gtest='ga . && gcm "COMMIT 4 TESTING ONLY" && gp'
+alias gtest='git add . && git commit -m "COMMIT 4 TESTING ONLY" && git push'
 
 # java
 # export JAVA_HOME=$(/usr/libexec/java_home -v ${version})
