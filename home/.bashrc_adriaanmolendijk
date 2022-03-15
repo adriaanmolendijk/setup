@@ -1,6 +1,8 @@
 #################### @adriaanmolendijk ####################
 
-##### tools #####
+# macOS
+export PATH=$PATH:/opt/homebrew/bin:/opt/homebrew/bin
+
 # git
 alias ga='git add'
 alias gb='git branch'
