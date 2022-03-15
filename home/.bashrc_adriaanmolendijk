@@ -1,19 +1,5 @@
 #################### @adriaanmolendijk ####################
 
-##### macOS #####
-# language
-export LC_ALL=en_US.UTF-8
-
-# set home and end key
-bindkey "\033[H" beginning-of-line
-bindkey "\033[F" end-of-line
-
-# replace forward word by end of word
-zle -A emacs-forward-word forward-word
-
-# backward-kill-word up to specific delimiters
-WORDCHARS='*?_.[]~=&;!#$%^(){}<>'
-
 ##### tools #####
 # git
 alias ga='git add'
@@ -36,12 +22,8 @@ alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
-
-autoload -Uz compinit
-compinit
-
-source <(kubectl completion zsh)
-compdef __start_kubectl k
+source <(kubectl completion bash)
+complete -F __start_kubectl k
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
@@ -50,13 +32,6 @@ alias kctx='k ctx'
 alias github='python3 ~/tool_github_url.py'
 
 # fuzzyfinder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# prompt git
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-setopt PROMPT_SUBST
-PROMPT='adriaan@mac:%9c%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 #################### @adriaanmolendijk ####################
