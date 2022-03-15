@@ -3,6 +3,9 @@
 # macOS
 export PATH=/opt/homebrew/bin:/opt/homebrew/bin:$PATH
 
+export BASH_COMPLETION_COMPAT_DIR="/opt/homebrew/etc/bash_completion.d"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
 # git
 alias ga='git add'
 alias gb='git branch'
