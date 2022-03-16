@@ -8,6 +8,8 @@ bindkey '\e[F'    end-of-line
 
 export LC_ALL=en_US.UTF-8
 
+WORDCHARS=''
+
 # git
 alias ga='git add'
 alias gb='git branch'
