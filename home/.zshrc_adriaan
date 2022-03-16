@@ -3,12 +3,6 @@
 # macOS
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 
-export BASH_COMPLETION_COMPAT_DIR="/opt/homebrew/etc/bash_completion.d"
-[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
-
-export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
 # git
 alias ga='git add'
 alias gb='git branch'
@@ -30,7 +24,7 @@ alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
-source <(kubectl completion bash)
+source <(kubectl completion zsh)
 complete -F __start_kubectl k
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -40,7 +34,7 @@ alias kctx='k ctx'
 alias github='python3 ~/tool_github_url.py'
 
 # fuzzyfinder
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # git prompt
 parse_git_branch() {
