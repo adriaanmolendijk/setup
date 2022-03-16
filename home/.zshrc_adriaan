@@ -8,6 +8,7 @@ bindkey '\e[F'    end-of-line
 
 export LC_ALL=en_US.UTF-8
 
+zle -A emacs-forward-word forward-word
 WORDCHARS=''
 
 # git
