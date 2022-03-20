@@ -1,17 +1,41 @@
 #################### @adriaanmolendijk ####################
 
+############################################################
+#################### operating system   ####################
+############################################################
 # macOS
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 
+############################################################
+#################### shell              ####################
+############################################################
 # zsh
 bindkey '\e[H'    beginning-of-line
 bindkey '\e[F'    end-of-line
 zle -A emacs-forward-word forward-word
 WORDCHARS=''
 
+# colored dirs
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# fuzzyfinder
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# git prompt
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+setopt PROMPT_SUBST
+PROMPT='%9c%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
+
+############################################################
+#################### tooling            ####################
+############################################################
+# docker
+alias docker-rm='docker rm $(docker ps -aq) -f'
+alias docker-rmi='docker rmi $(docker images -aq) -f'
 
 # git
 alias ga='git add'
@@ -42,17 +66,7 @@ source <(kubectl completion zsh)
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
 
-# custom tools
+# tools (custom)
 alias github='python3 ~/tool_github_url.py'
-
-# fuzzyfinder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# git prompt
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-setopt PROMPT_SUBST
-PROMPT='%9c%{%F{green}%}$(parse_git_branch)%{%F{none}%} $ '
 
 #################### @adriaanmolendijk ####################
