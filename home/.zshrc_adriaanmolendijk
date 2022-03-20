@@ -69,7 +69,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias kctx='k ctx'
 
 # tools (custom)
-alias github='python3 ~/tool_github_url.py'
+alias github='python3 ~/adriaanmolendijk/setup/tools/tool-github-url/src/app.py'
 
 ############################################################
 # @adriaanmolendijk                                        #
