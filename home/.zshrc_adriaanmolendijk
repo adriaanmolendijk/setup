@@ -71,6 +71,7 @@ alias kctx='k ctx'
 # maven
 alias mvn-ci='mvn clean install'
 alias mvn-cit='mvn clean install -DskipTests'
+alias mvn-tree='mvn dependency:tree -DskipTests'
 
 # tools (custom)
 alias github='python3 ~/adriaanmolendijk/setup/tools/tool-github-url/src/app.py'
