@@ -1,2 +1,2 @@
 setup:
-	bash scripts/setup.sh
+	cp -r home/. ~

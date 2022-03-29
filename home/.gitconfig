@@ -1,0 +1,7 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[user]
+	name = Adriaan Molendijk
+[alias]
+	delete-remote-branches = !git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
