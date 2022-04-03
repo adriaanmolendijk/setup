@@ -6,11 +6,13 @@
   },
   "Profiles": {
     "Text": {
+      "Cursor": "Vertical bar",
       "Font": ["Menlo", 14]
     },
     "Window": {
       "Columns": 200,
-      "Rows": 50
+      "Rows": 50,
+      "Style": "No title bar"
     },
     "keys": {
       "General": {
