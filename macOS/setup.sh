@@ -7,6 +7,7 @@ brew install jq
 
 brew install --cask iterm2
 brew install --cask google-chrome
+brew install --cask firefox
 brew install --cask sublime-text
 brew install --cask drawio
 
