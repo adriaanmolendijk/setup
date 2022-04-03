@@ -1,0 +1,26 @@
+{
+  "General" : {
+    "Closing": {
+      "Confirm quit iTerm2": "Disabled"
+    }
+  },
+  "Profiles": {
+    "Text": {
+      "Font": ["Menlo", 14]
+    },
+    "Window": {
+      "Columns": 200,
+      "Rows": 50
+    },
+    "keys": {
+      "General": {
+        "Left option key": "Esc+",
+        "Right option key": "Esc+"
+      },
+      "Key mappings": {
+        "Presets": "Natural text editing",
+        "Del->": "Disabled"
+      }
+    }
+  }
+}

@@ -5,9 +5,9 @@
       "Line height": 1.2
     },
     "Keymap": {
-      "Close Project": "CMD + SHIFT + W",
-      "Manage Projects...": "CMD + SHIFT + P",
-      "Path From Repository Root": "CMD + SHIFT + X",
+      "Close project": "CMD + SHIFT + W",
+      "Manage projects...": "CMD + SHIFT + P",
+      "Path from repository root": "CMD + SHIFT + X",
       "Terminal": "CMD + ."
     },
     "Plugins": ["AsciiDoc", "Csv", "Docker", "Makefile Language", "PlantUML Integration", "Terraform and HCL"]
