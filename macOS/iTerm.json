@@ -6,7 +6,6 @@
   },
   "Profiles": {
     "Text": {
-      "Cursor": "Vertical bar",
       "Font": ["Menlo", 14]
     },
     "Window": {
