@@ -20,6 +20,7 @@ brew install terragrunt
 brew install vault
 
 # tools
+brew install --cask dbeaver-community
 brew install --cask drawio
 brew install --cask firefox
 brew install --cask google-chrome
