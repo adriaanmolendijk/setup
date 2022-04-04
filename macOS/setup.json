@@ -1,0 +1,43 @@
+[
+  {
+    "General" : {
+      "Closing": {
+        "Confirm quit iTerm2": "Disabled"
+      }
+    },
+    "Profiles": {
+      "Text": {
+        "Font": ["Menlo", 15]
+      },
+      "Window": {
+        "Transparency": 10,
+        "Columns": 200,
+        "Rows": 50
+      },
+      "keys": {
+        "General": {
+          "Left option key": "Esc+",
+          "Right option key": "Esc+"
+        },
+        "Key mappings": {
+          "Presets": "Natural text editing",
+          "Del->": "Disabled"
+        }
+      }
+    }
+  },
+  {
+    "IntelliJ": {
+      "Font": {
+        "Size": 15,
+        "Line height": 1.2
+      },
+      "Keymap": {
+        "Close project": "CMD + SHIFT + W",
+        "Manage projects...": "CMD + SHIFT + P",
+        "Path from repository root": "CTRL + OPTION + CMD + C",
+        "Terminal": "CMD + ."
+      }
+    }
+  }
+]
