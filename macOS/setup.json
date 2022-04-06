@@ -1,5 +1,5 @@
-[
-  {
+{
+  "iterm2": {
     "General" : {
       "Closing": {
         "Confirm quit iTerm2": "Disabled"
@@ -26,7 +26,7 @@
       }
     }
   },
-  {
+  "IntelliJ": {
     "IntelliJ": {
       "Font": {
         "Size": 15,
@@ -40,4 +40,4 @@
       }
     }
   }
-]
+}
