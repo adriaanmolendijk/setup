@@ -1,18 +1,18 @@
 #!/bin/sh
 
 log () {
-  echo ">>>>> $dir $1 <<<<<"
+  echo "$dir: $1"
 }
 
 # for each repository in current folder do
 for dir in */; do
   cd $dir
 
-  log "checkout main"
+  log "git checkout main"
   git checkout main
   git pull
-  
-  log "delete remote branches"
+
+  log "git delete-remote-branches"
   git delete-remote-branches
 
   sleep 2
