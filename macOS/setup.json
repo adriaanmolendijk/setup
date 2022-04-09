@@ -35,7 +35,7 @@
       "Keymap": {
         "Close project": "CMD + SHIFT + W",
         "Manage projects...": "CMD + SHIFT + P",
-        "Path from repository root": "CTRL + OPTION + CMD + C",
+        "Path from repository root": "CMD + SHIFT + X",
         "Terminal": "CMD + ."
       }
     }
