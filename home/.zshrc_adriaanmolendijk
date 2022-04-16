@@ -65,9 +65,6 @@ autoload -Uz compinit
 compinit
 source <(kubectl completion zsh)
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-alias kctx='k ctx'
-
 # maven
 alias mvn-ci='mvn clean install'
 alias mvn-cit='mvn clean install -DskipTests'
