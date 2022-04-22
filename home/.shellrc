@@ -2,6 +2,11 @@
 # @adriaan                                                                      #
 #################################################################################
 
+# macOS
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export LC_ALL=en_US.UTF-8
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # docker
 alias docker-rm='docker rm $(docker ps -aq) -f'
 alias docker-rmi='docker rmi $(docker images -aq) -f'
