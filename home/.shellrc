@@ -1,6 +1,15 @@
-#################################################################################
-# @adriaan                                                                      #
-#################################################################################
+######################################################################
+# operating system
+######################################################################
+
+# macOS
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export LC_ALL=en_US.UTF-8
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+######################################################################
+# tooling
+######################################################################
 
 # docker
 alias docker-rm='docker rm $(docker ps -aq) -f'
@@ -32,7 +41,3 @@ alias kctx='kubectl config use-context'
 alias mvn-ci='mvn clean install'
 alias mvn-cit='mvn clean install -DskipTests'
 alias mvn-tree='mvn dependency:tree -DskipTests'
-
-#################################################################################
-# @adriaan                                                                      #
-#################################################################################
