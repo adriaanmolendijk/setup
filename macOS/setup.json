@@ -30,7 +30,6 @@
     "IntelliJ": {
       "Font": {
         "Size": 15,
-        "Line height": 1.2
       },
       "Keymap": {
         "Close project": "CMD + SHIFT + W",
