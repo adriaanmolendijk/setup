@@ -41,3 +41,7 @@ alias kctx='kubectl config use-context'
 alias mvn-ci='mvn clean install'
 alias mvn-cit='mvn clean install -DskipTests'
 alias mvn-tree='mvn dependency:tree -DskipTests'
+
+# shell
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
