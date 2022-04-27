@@ -36,6 +36,9 @@
         "Manage projects...": "CMD + SHIFT + P",
         "Path from repository root": "CMD + SHIFT + X",
         "Terminal": "CMD + ."
+      },
+      "Terminal": {
+        "Copy to clipboard on selection": "Enabled"
       }
     }
   }
