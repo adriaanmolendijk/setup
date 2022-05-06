@@ -3,7 +3,7 @@
 ## About this repository
 Development setup. 
 
-# Setup
+## Setup
 ```shell
 make setup
 ```
