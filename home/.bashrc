@@ -1,3 +1,15 @@
+######################################################################
+# macOS
+######################################################################
+
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+export LC_ALL=en_US.UTF-8
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+######################################################################
+# shell
+######################################################################
+
 # fuzzyfinder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -7,4 +19,41 @@ parse_git_branch() {
 }
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
-source ~/.shellrc
+######################################################################
+# tooling
+######################################################################
+
+# docker
+alias docker-rm='docker rm $(docker ps -aq) -f'
+alias docker-rmi='docker rmi $(docker images -aq) -f'
+
+# git
+alias ga='git add'
+alias gb='git branch'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gcmp='git commit -m "TESTING ONLY" && git push'
+alias gl='git log'
+alias gm='git merge'
+alias gp='git push'
+alias gpl='git pull'
+alias gst='git status'
+
+# java
+# export JAVA_HOME=$(/usr/libexec/java_home -v ${version})
+
+# kubernetes
+alias h='helm'
+alias k='kubectl'
+alias kns='kubectl config set-context --current --namespace'
+alias knsc='kubectl config get-contexts'
+alias kctx='kubectl config use-context'
+
+# maven
+alias mvn-ci='mvn clean install'
+alias mvn-cit='mvn clean install -DskipTests'
+alias mvn-tree='mvn dependency:tree -DskipTests'
+
+# shell
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
