@@ -7,19 +7,6 @@ export LC_ALL=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 ######################################################################
-# shell
-######################################################################
-
-# fuzzyfinder
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# git prompt
-parse_git_branch() {
-     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-
-######################################################################
 # tooling
 ######################################################################
 
@@ -57,3 +44,16 @@ alias mvn-tree='mvn dependency:tree -DskipTests'
 # shell
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+######################################################################
+# shell
+######################################################################
+
+# fuzzyfinder
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# git prompt
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
