@@ -10,7 +10,7 @@
         "Font": ["Menlo", 15]
       },
       "Window": {
-        "Transparency": 10,
+        "Transparency": 5,
         "Columns": 200,
         "Rows": 50
       },
