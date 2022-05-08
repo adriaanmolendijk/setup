@@ -1,7 +1,6 @@
 ######################################################################
 # macOS
 ######################################################################
-
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 export LC_ALL=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
@@ -9,11 +8,6 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 ######################################################################
 # tooling
 ######################################################################
-
-# docker
-alias docker-rm='docker rm $(docker ps -aq) -f'
-alias docker-rmi='docker rmi $(docker images -aq) -f'
-
 # git
 alias ga='git add'
 alias gb='git branch'
@@ -36,19 +30,9 @@ alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
 
-# maven
-alias mvn-ci='mvn clean install'
-alias mvn-cit='mvn clean install -DskipTests'
-alias mvn-tree='mvn dependency:tree -DskipTests'
-
-# shell
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
 ######################################################################
 # shell
 ######################################################################
-
 # fuzzyfinder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -57,3 +41,7 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+# shell
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
