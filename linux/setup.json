@@ -1,3 +1,9 @@
 {
-
+  "IntelliJ": {
+    "keymap": {
+      "manage projects": "ctrl + shift + p",
+      "path from repository root": "ctrl + shift + x.",
+      "terminal": "ctrl + ."
+    }
+  }
 }
