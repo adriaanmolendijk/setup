@@ -3,7 +3,9 @@
     "keymap": {
       "manage projects": "ctrl + shift + p",
       "path from repository root": "ctrl + shift + x.",
-      "terminal": "ctrl + ."
+      "terminal": "ctrl + .",
+      "next tab": "ctrl + tab",
+      "previous tab": "ctrl + shift + tab"
     }
   }
 }
