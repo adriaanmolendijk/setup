@@ -23,5 +23,8 @@ alias kctx='kubectl config use-context'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 
+# shell
+PROMPT='%F{cyan}%n%f@%m:%1~ $ '
+
 # tools
 alias github='python3 ~/github_url.py'
