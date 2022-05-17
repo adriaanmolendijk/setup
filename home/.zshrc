@@ -20,3 +20,5 @@ alias kctx='kubectl config use-context'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 
+# shell
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
