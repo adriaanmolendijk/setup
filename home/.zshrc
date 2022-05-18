@@ -15,4 +15,9 @@ alias gcmp='git commit -m "TESTING ONLY" && git push'
 
 # shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-WORDCHARS='' # Don't consider certain characters part of the word
+
+# Don't consider certain characters part of the word
+WORDCHARS=''
+
+# Replace `forward-word` with `emacs-forward-word`. Problem solved.
+zle -A emacs-forward-word forward-word
