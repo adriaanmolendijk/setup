@@ -22,3 +22,4 @@ alias knsc='kubectl config get-contexts'
 
 # shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+WORDCHARS=${WORDCHARS//[\/.-_]} # Don't consider certain characters part of the word
