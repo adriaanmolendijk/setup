@@ -1,4 +1,4 @@
 # setup
 
 ## About this repository
-Development setup. 
+Machine setup. 

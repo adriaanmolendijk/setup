@@ -10,9 +10,6 @@ alias gco='git checkout'
 alias gst='git status'
 alias gcmp='git commit -m "TESTING ONLY" && git push'
 
-# java
-# export JAVA_HOME=$(/usr/libexec/java_home -v ${version})
-
 # shell
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
