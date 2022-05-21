@@ -1,10 +1,7 @@
 # copy dotfiles
 CONFIG_DIR=~/.config/adriaan
-cp home/.gitignore_global $CONFIG_DIR/.gitignore_global
-cp home/.zshrc $CONFIG_DIR/.zshrc
-cp home/.zshrc_kali $CONFIG_DIR/.zshrc_kali
-
-cp home/.tmux.conf home/.vimrc ~
+cp dotfiles/.gitignore_global dotfiles/.zshrc dotfiles/.zshrc_kali $CONFIG_DIR
+cp dotfiles/.tmux.conf dotfiles/.vimrc ~
 
 # git config
 git config --global core.editor "vim"
