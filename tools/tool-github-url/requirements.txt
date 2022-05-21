@@ -1,4 +1,0 @@
-click
-pygit2
-pyperclip
-pytest
