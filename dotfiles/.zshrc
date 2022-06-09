@@ -26,3 +26,10 @@ WORDCHARS=''
 
 # Replace `forward-word` with `emacs-forward-word`. Problem solved.
 zle -A emacs-forward-word forward-word
+
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+setopt PROMPT_SUBST
+PROMPT='%9c%{%F{blue}%}$(parse_git_branch)%{%F{none}%} $ '
