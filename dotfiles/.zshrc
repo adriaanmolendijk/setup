@@ -18,18 +18,15 @@ alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
 
-# shell
+# fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Don't consider certain characters part of the word
-WORDCHARS=''
+WORDCHARS=''                                # Don't consider certain characters part of the word.
+zle -A emacs-forward-word forward-word      # Replace 'forward-word' with 'emacs-forward-word'.
 
-# Replace `forward-word` with `emacs-forward-word`. Problem solved.
-zle -A emacs-forward-word forward-word
-
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-setopt PROMPT_SUBST
-PROMPT='%9c%{%F{blue}%}$(parse_git_branch)%{%F{none}%} $ '
+HISTFILE=~/.config/adriaan/.zsh_history
+HISTSIZE=1000                               # Determines the number of commands loaded into the memory from the history file.
+SAVEHIST=2000
+setopt hist_expire_dups_first               # Delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups                     # Ignore duplicated commands history list
+setopt hist_ignore_space                    # Ignore commands that start with space
