@@ -1,0 +1,11 @@
+{
+    "keymap" : {
+        "close active editor": "ctrl + w",
+        "manage projects": "ctrl + shift + p",
+        "next tab": "ctrl + tab",
+        "open in github": "ctrl + shift + g",
+        "path from repository root": "ctrl + shift + x.",
+        "previous tab": "ctrl + shift + tab",
+        "terminal": "ctrl + ."
+    }
+}
