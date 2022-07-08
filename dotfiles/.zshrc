@@ -10,13 +10,15 @@ alias gco='git checkout'
 alias gst='git status'
 alias gcmp='git commit -m "TESTING ONLY" && git push'
 
-alias github="git config --get remote.origin.url | sed -e 's/:/\//g'| sed -e 's/ssh\/\/\///g'| sed -e 's/git@/https:\/\//g'"
-
 alias k='kubectl'
 alias k='kubectl'
 alias kns='kubectl config set-context --current --namespace'
 alias knsc='kubectl config get-contexts'
 alias kctx='kubectl config use-context'
+
+gdel() {
+  git fetch -p && for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do git branch -D $branch; done
+}
 
 # fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
