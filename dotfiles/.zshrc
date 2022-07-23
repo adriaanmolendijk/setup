@@ -23,6 +23,8 @@ gdel() {
 # fuzzyfinder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+export PROMPT_EOL_MARK="" # hide EOL sign ('%')
+
 WORDCHARS=''                                # Don't consider certain characters part of the word.
 zle -A emacs-forward-word forward-word      # Replace 'forward-word' with 'emacs-forward-word'.
 
